@@ -1,8 +1,20 @@
+import { useDispatch } from "react-redux";
+import { addExpense } from "../../store/expense/expense.slice";
 import s from "./style.module.css";
 
-export function ExpenseInput(props) {
+export function ExpenseInput(props:any) {
+  const dispatch = useDispatch()
+  const submit = (e:any)=>{
+    e.preventDefault()
+    const formData = new FormData(e.currentTarget)
+    const name = formData.get("name")
+    const price = formData.get("price")
+
+    dispatch(addExpense({name,price}))
+    console.log(name,price)
+  }
   return (
-    <form>
+    <form onSubmit={submit}>
       <div className="row justify-content-center flex gap-x-2">
         <div className="col-12 col-sm-5 col-md-4 col-lg-4 mb-2">
           <input
@@ -20,6 +32,7 @@ export function ExpenseInput(props) {
             className="form-control text-gray-400 pl-2"
             placeholder="Ex: 3.99"
             name="price"
+            
             
           />
         </div>
