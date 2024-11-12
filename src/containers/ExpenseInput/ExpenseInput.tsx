@@ -7,8 +7,8 @@ export function ExpenseInput(props:any) {
   const submit = (e:any)=>{
     e.preventDefault()
     const formData = new FormData(e.currentTarget)
-    const name = formData.get("name")
-    const price = formData.get("price")
+    const name = formData.get("name") as string
+    const price = Number(formData.get("price") as string)
 
     dispatch(addExpense({name,price}))
     console.log(name,price)

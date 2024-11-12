@@ -19,10 +19,10 @@ export function App() {
       </div>
       <div className={`row ${s.workspace} flex`}>
         <div className={`col-12  ${s.expense_input}`}>
-          <ExpenseInput/>
+          <ExpenseInput />
         </div>
         <div className={`col-11 col-md-6 col-lg-4 ${s.expense_list}`}>
-            <List items={[{name:"Apple",price:"300"}]}/>
+            <List items={expenseList}/>
           <div className={`col-12 ${s.expense_total}`}>
             ExpenseTotal
           </div>

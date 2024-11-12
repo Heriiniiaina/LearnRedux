@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 interface Expense {
    
     name: string;
-    amount: number;
+    price: number;
 }
 interface ExpenseState {
     expenseList: Expense[];
