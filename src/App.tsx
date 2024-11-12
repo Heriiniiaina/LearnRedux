@@ -2,10 +2,11 @@ import { useSelector } from "react-redux";
 import { List } from "./components/List/List";
 import { ExpenseInput } from "./containers/ExpenseInput/ExpenseInput";
 import s from "./style.module.css";
+import { RootState } from "./store";
 
 
 export function App() {
-  const expenseList = useSelector((store)=>store.EXPENSE.expenseList)
+  const expenseList = useSelector((store:RootState)=>store.EXPENSE.expenseList)
   console.log("a",expenseList)
   return (
     <div className={s.main_container}>
