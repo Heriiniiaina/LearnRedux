@@ -605,6 +605,11 @@ video {
        column-gap: 0.5rem;
 }
 
+.gap-x-5 {
+  -moz-column-gap: 1.25rem;
+       column-gap: 1.25rem;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
