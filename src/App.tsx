@@ -1,9 +1,10 @@
+import { ExpenseInput } from "./components/ExpenseInput/ExpenseInput";
 import s from "./style.module.css";
 
 export function App() {
   return (
     <div className={s.main_container}>
-      <div className={`row ${s.header}`}>
+      <div className={`row ${s.header} `}>
         <div className={`col-3`}>
           Logo
         </div>
@@ -11,9 +12,9 @@ export function App() {
           Income input
         </div>
       </div>
-      <div className={`row ${s.workspace}`}>
+      <div className={`row ${s.workspace} flex`}>
         <div className={`col-12  ${s.expense_input}`}>
-          Expense Input
+          <ExpenseInput/>
         </div>
         <div className={`col-11 col-md-6 col-lg-4 ${s.expense_list}`}>
           Expense History
