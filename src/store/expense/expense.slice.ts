@@ -10,12 +10,13 @@ interface ExpenseState {
 interface ExpenseState {
     expenseList: Expense[];
   }
+  const initialState: ExpenseState = {
+    expenseList: [],
+  };
 
 export const expenseSlice = createSlice({
     name:"expenseSlice",
-    initialState:{
-        expenseList:[]
-    },
+    initialState,
     reducers:{
         addExpense: (currentSlice,action:PayloadAction<Expense>)=>{
             currentSlice.expenseList.push(action.payload)
