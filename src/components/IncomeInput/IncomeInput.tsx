@@ -1,11 +1,14 @@
 import s from "./style.module.css";
 import { RootState } from "../../store";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { setIncome } from "../../store/expense/expense.slice";
 export function IncomeInput(props:any) {
   const income = useSelector((store:RootState) => store.EXPENSE.income)
+  const dispatch = useDispatch()
   const updateIncome = (e:any)=>{
     const income = e.target.value
     console.log(income)
+    dispatch(setIncome(income))
   }
   return (
     <div className="row justify-content-center mb-2">
