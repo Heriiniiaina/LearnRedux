@@ -2,7 +2,7 @@ import s from "./style.module.css";
 import { RootState } from "../../store";
 import { useDispatch, useSelector } from "react-redux";
 import { setIncome } from "../../store/expense/expense.slice";
-export function IncomeInput(props:any) {
+export function IncomeInput() {
   const income = useSelector((store:RootState) => store.EXPENSE.income)
   const dispatch = useDispatch()
   const updateIncome = (e:any)=>{

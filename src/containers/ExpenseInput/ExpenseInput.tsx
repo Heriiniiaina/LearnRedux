@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux";
 import { addExpense } from "../../store/expense/expense.slice";
 import s from "./style.module.css";
 
-export function ExpenseInput(props:any) {
+export function ExpenseInput() {
   const dispatch = useDispatch()
   const submit = (e:any)=>{
     e.preventDefault()

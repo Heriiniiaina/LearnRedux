@@ -5,6 +5,7 @@ import s from "./style.module.css";
 import { RootState } from "./store";
 import { IncomeInput } from "./containers/IncomeInput/IncomeInput";
 import { ExpenseTotal } from "./containers/ExpenseTotal/ExpenseTotal";
+import { Logo } from "./components/Logo/Logo";
 
 
 export function App() {
@@ -14,7 +15,7 @@ export function App() {
     <div className={s.main_container}>
       <div className={`row ${s.header} `}>
         <div className={`col-3`}>
-          Logo
+            <Logo title={"Spent"} subtitle={"Track your expenses"} image={""}/>
         </div>
         <div className={`col-9 ${s.income_input}`}>
           <IncomeInput/>
