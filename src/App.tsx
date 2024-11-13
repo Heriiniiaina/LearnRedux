@@ -16,7 +16,7 @@ export function App() {
           Logo
         </div>
         <div className={`col-9 ${s.income_input}`}>
-         
+          <IncomeInput/>
         </div>
       </div>
       <div className={`row ${s.workspace} flex`}>

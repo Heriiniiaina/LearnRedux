@@ -9,9 +9,11 @@ interface ExpenseState {
 }
 interface ExpenseState {
     expenseList: Expense[];
+    income:number
   }
   const initialState: ExpenseState = {
     expenseList: [],
+    income:1000
   };
 
 export const expenseSlice = createSlice({
