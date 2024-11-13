@@ -29,5 +29,5 @@ export const expenseSlice = createSlice({
     }
 })
 
-const {addExpense} = expenseSlice.actions
-export {addExpense}
+const {addExpense,setIncome} = expenseSlice.actions
+export {addExpense,setIncome}
