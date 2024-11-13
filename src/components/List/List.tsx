@@ -1,11 +1,13 @@
 import { ListItem } from "../ListItem/ListItem";
-interface itemsType{
-  name:string,
-  price:string
 
+interface Expense {
+   
+  name: string;
+  price: number;
 }
 interface ListProps{
-  items:itemsType[]
+  items:Expense[],
+
 }
 export function List({ items }:ListProps) {
   return (

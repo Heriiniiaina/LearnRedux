@@ -2,7 +2,7 @@ import s from "./style.module.css";
 interface TypeProps{
   item:{
     name:string,
-    price:string
+    price:number
   }
 }
 
