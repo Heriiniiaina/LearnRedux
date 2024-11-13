@@ -11,7 +11,7 @@ export function IncomeInput(props:any) {
     <div className="row justify-content-center mb-2">
       <div className={`col-6 ${s.label}`}>Income</div>
       <div className="col-6">
-        <input onChange={updateIncome}type="number" className="form-control text-gray-400" placeholder="Ex: 3000" />
+        <input onChange={updateIncome} defaultValue={income} type="number" className="form-control text-gray-400 pl-3" placeholder="Ex: 3000" />
       </div>
     </div>
   );

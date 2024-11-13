@@ -21,9 +21,10 @@ export const expenseSlice = createSlice({
     initialState,
     reducers:{
         addExpense: (currentSlice,action:PayloadAction<Expense>)=>{
-            currentSlice.expenseList.push(action.payload)
-           
-            
+            currentSlice.expenseList.push(action.payload) 
+        },
+        setIncome:(currentSlice,action:PayloadAction<number>)=>{
+            currentSlice.income = action.payload
         }
     }
 })
