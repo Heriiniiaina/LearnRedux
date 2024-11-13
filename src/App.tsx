@@ -3,6 +3,7 @@ import { List } from "./components/List/List";
 import { ExpenseInput } from "./containers/ExpenseInput/ExpenseInput";
 import s from "./style.module.css";
 import { RootState } from "./store";
+import { IncomeInput } from "./components/IncomeInput/IncomeInput";
 
 
 export function App() {
@@ -15,7 +16,7 @@ export function App() {
           Logo
         </div>
         <div className={`col-9 ${s.income_input}`}>
-          Income input
+          <IncomeInput/>
         </div>
       </div>
       <div className={`row ${s.workspace} flex`}>
