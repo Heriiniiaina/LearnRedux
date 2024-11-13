@@ -3,7 +3,7 @@ import { List } from "./components/List/List";
 import { ExpenseInput } from "./containers/ExpenseInput/ExpenseInput";
 import s from "./style.module.css";
 import { RootState } from "./store";
-import { IncomeInput } from "./components/IncomeInput/IncomeInput";
+import { IncomeInput } from "./containers/IncomeInput/IncomeInput";
 
 
 export function App() {
